@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/star_image"
+        android:layout_width="@dimen/star_image_width"
+        android:layout_height="@dimen/star_image_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/star_name"
+        android:layout_width="@dimen/zero_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/star_name_margin_start"
+        tools:text="@string/star_name_tools_text"
+        android:textSize="@dimen/star_name_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/star_image"
+        app:layout_constraintStart_toStartOf="@id/star_image" />
+
+    <TextView
+        android:id="@+id/star_character"
+        android:layout_width="@dimen/zero_size"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/star_character_margin_start"
+        tools:text="@string/star_character_tools_text"
+        android:textSize="@dimen/star_character_text_size"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/star_name"
+        app:layout_constraintStart_toStartOf="@id/star_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

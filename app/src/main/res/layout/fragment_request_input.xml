@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_button"
+            android:layout_width="@dimen/back_button_width"
+            android:layout_height="@dimen/back_button_height"
+            android:layout_marginStart="@dimen/back_button_margin_start"
+            android:background="@drawable/ic_baseline_keyboard_backspace"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_button"
+            android:layout_width="@dimen/search_button_width"
+            android:layout_height="@dimen/search_button_height"
+            android:layout_marginEnd="@dimen/search_button_margin_end"
+            android:background="@drawable/ic_baseline_search"
+            android:visibility="invisible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/request_elements_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="help_info,film_title_title,film_title_input_field,film_title_type_title,film_title_types_list,film_genre_title,film_genres_list,run_search_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/help_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="?actionBarSize"
+        android:text="@string/help_info_text"
+        android:textStyle="italic"
+        android:textSize="@dimen/help_info_text_size"
+        app:layout_constraintTop_toBottomOf="@id/header_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/film_title_title"/>
+
+    <TextView
+        android:id="@+id/film_title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/film_title_title_margin_top"
+        android:text="@string/film_title_title_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/film_title_title_text_size"
+        app:layout_constraintTop_toBottomOf="@id/help_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/film_title_input_field" />
+
+    <EditText
+        android:id="@+id/film_title_input_field"
+        android:layout_width="@dimen/zero_size"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/film_title_input_field_hint"
+        android:textSize="@dimen/film_title_input_field_text_size"
+        app:layout_constraintTop_toBottomOf="@id/film_title_title"
+        app:layout_constraintStart_toStartOf="@id/film_title_title"
+        app:layout_constraintEnd_toEndOf="@id/film_title_title"
+        app:layout_constraintBottom_toTopOf="@id/film_title_type_title" />
+
+    <TextView
+        android:id="@+id/film_title_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/film_title_type_title_margin_top"
+        android:text="@string/film_title_type_title_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/film_title_type_title_text_size"
+        app:layout_constraintTop_toBottomOf="@id/film_title_input_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/film_title_types_list" />
+
+    <Spinner
+        android:id="@+id/film_title_types_list"
+        android:layout_width="@dimen/film_title_type_list_width"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:entries="@array/film_title_types_list"
+        android:textSize="@dimen/film_title_type_list_text_size"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/film_title_type_title"
+        app:layout_constraintStart_toStartOf="@id/film_title_title"
+        app:layout_constraintEnd_toEndOf="@id/film_title_title"
+        app:layout_constraintBottom_toTopOf="@id/film_genre_title" />
+
+    <TextView
+        android:id="@+id/film_genre_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/film_genre_title_margin_top"
+        android:text="@string/film_genre_title_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/film_genre_title_text_size"
+        app:layout_constraintTop_toBottomOf="@id/film_title_types_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/film_genres_list" />
+
+    <Spinner
+        android:id="@+id/film_genres_list"
+        android:layout_width="@dimen/film_genre_list_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:entries="@array/film_genres_list"
+        android:textSize="@dimen/film_genre_list_text_size"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/film_genre_title"
+        app:layout_constraintStart_toStartOf="@id/film_title_title"
+        app:layout_constraintEnd_toEndOf="@id/film_title_title" />
+
+    <Button
+        android:id="@+id/run_search_button"
+        android:layout_width="@dimen/zero_size"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/run_search_button_margin_top"
+        android:text="@string/run_search_button_text"
+        app:layout_constraintTop_toBottomOf="@id/film_genres_list"
+        app:layout_constraintStart_toStartOf="@id/film_title_title"
+        app:layout_constraintEnd_toEndOf="@id/film_title_title" />
+
+    <!-- Индикатор загрузки -->
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
