@@ -1,3 +1,87 @@
 <resources>
-    <string name="app_name">MyFilm</string>
+    <string name="app_name">Test Film</string>
+    <string name="help_info_text">Для поиска фильма\nзаполните одно\nили несколько полей</string>
+    <string name="film_title_title_text">Укажите название фильма,\nесли знаете:</string>
+    <string name="film_title_input_field_hint">Название фильма</string>
+    <string name="film_title_type_title_text">Выберите тип фильма,\nесли знаете:</string>
+    <string name="film_genre_title_text">Выберите жанр фильма,\nесли знаете:</string>
+    <string name="empty_text" />
+    <string name="content_start_top_film_title_tools_text">Star Wars: The Rise of Skywalker</string>
+    <string name="content_start_top_film_date_tools_text">18 Dec 2019</string>
+    <string name="content_end_top_film_title_tools_text">Star Wars: The Rise of Skywalker</string>
+    <string name="content_end_top_film_date_tools_text">18 Dec 2019</string>
+    <string name="content_start_bottom_film_title_tools_text">Star Wars: The Rise of Skywalker</string>
+    <string name="content_start_bottom_film_date_tools_text">18 Dec 2019</string>
+    <string name="content_end_bottom_film_title_tools_text">Star Wars: The Rise of Skywalker</string>
+    <string name="content_end_bottom_film_date_tools_text">18 Dec 2019</string>
+    <string name="footer_first_element_tools_text">1</string>
+    <string name="footer_second_element_tools_text">2</string>
+    <string name="footer_third_element_tools_text">3</string>
+    <string name="footer_fourth_element_tools_text">4</string>
+    <string name="footer_fifth_element_tools_text">5</string>
+    <string name="footer_sixth_element_tools_text">6</string>
+    <string name="footer_seventh_element_tools_text">7</string>
+    <string name="footer_eighth_element_tools_text">8</string>
+    <string name="footer_ninth_element_tools_text">9</string>
+    <string name="content_header_film_raiting_title_tools_text">User Score</string>
+    <string name="content_header_film_raiting_number_tools_text">94</string>
+    <string name="content_header_film_runtime_tools_text">2h 22m</string>
+    <string name="content_header_film_released_date_tools_text">Released: 19 Dec 2019</string>
+    <string name="content_header_film_genres_tools_text">Action, Adventure, Science Fiction</string>
+    <string name="content_footer_film_overview_text_tools_text">The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.</string>
+    <string name="content_footer_film_overview_title_text">Overview</string>
+    <string name="content_footer_film_stars_list_title_text">Top Billed Cast</string>
+    <string name="star_character_tools_text">Luke Skywalker</string>
+    <string name="star_name_tools_text">Mark Hamill</string>
+    <string name="run_search_button_text">Найти фильм(ы)</string>
+    <string name="help_needs_internet_connection">Для получения информации о фильмах, пожалуйста, установите связь с Интернетом</string>
+    <string name="error_needs_internet_connection">Нужно установить связь с Интернетом</string>
+    <string name="no_founded_films">Найти для Вас фильм(ы), к сожалению, не удалось</string>
+    <string name="error_no_founded_films">Не найден(ы) фильм(ы)</string>
+
+    <string-array name="film_title_types_list">
+        <item>Не выбрано</item>
+        <item>Feature Film</item>
+        <item>TV Special</item>
+        <item>Short Film</item>
+        <item>Podcast Episode</item>
+        <item>TV Movie</item>
+        <item>Mini-Series</item>
+        <item>Video</item>
+        <item>TV Series</item>
+        <item>Documentary</item>
+        <item>TV Short</item>
+        <item>TV Episode</item>
+        <item>Podcast Series</item>
+    </string-array>
+
+    <string-array name="film_genres_list">
+        <item>Не выбрано</item>
+        <item>Action</item>
+        <item>Comedy</item>
+        <item>Family</item>
+        <item>History</item>
+        <item>Mystery</item>
+        <item>Sci-Fi</item>
+        <item>War</item>
+        <item>Adventure</item>
+        <item>Crime</item>
+        <item>Fantasy</item>
+        <item>Horror</item>
+        <item>News</item>
+        <item>Sport</item>
+        <item>Western</item>
+        <item>Animation</item>
+        <item>Documentary</item>
+        <item>Film-Noir</item>
+        <item>Reality-TV</item>
+        <item>Talk-Show</item>
+        <item>Biography</item>
+        <item>Drama</item>
+        <item>Game-Show</item>
+        <item>Musical</item>
+        <item>Romance</item>
+        <item>Thriller</item>
+    </string-array>
+
 </resources>
